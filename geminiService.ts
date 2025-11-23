@@ -81,7 +81,7 @@ class GeminiService {
     `;
 
     const response = await this.ai.models.generateContent({
-      model: 'gemini-3-pro-preview', // Using Pro for complex reasoning tasks
+      model: 'gemini-2.5-flash', // Using Pro for complex reasoning tasks
       contents: prompt,
       config: {
         systemInstruction: ADVISOR_SYSTEM_INSTRUCTION,
