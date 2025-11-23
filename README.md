@@ -1,11 +1,11 @@
 # CyberLex AI
 
-A React-based Cyber Law Advisor web application 
+A React-based Cyber Law Advisor web application powered by Google's Gemini API.
 
 ## Prerequisites
 
 1.  **Node.js**: Install from [nodejs.org](https://nodejs.org/) (Version 18+ recommended).
-2.  **API Key**: You need a Google Gemini API Key 
+2.  **API Key**: You need a Google Gemini API Key from [aistudio.google.com](https://aistudio.google.com).
 
 ## Setup Instructions
 
@@ -37,11 +37,10 @@ Create a `.env` file in the root of your project:
 ```
 VITE_API_KEY=your_actual_api_key_here
 ```
-
+*Note: In the code `services/geminiService.ts`, change `process.env.API_KEY` to `import.meta.env.VITE_API_KEY` for Vite compatibility.*
 
 ### 6. Run Locally
 ```bash
 npm run dev
 ```
-
-# cyberlex
+Open the link provided (usually `http://localhost:5173`) in your browser.
